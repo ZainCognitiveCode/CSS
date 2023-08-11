@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH8</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 146px;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+
+        }
+
+        .box {
+            width: 146px;
+            height: 456px;
+            transition: width 1s ease-in-out 2s height 4s ease-in;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis officia aut
+            facilis harum
+            veritatis unde natus, nesciunt doloremque pariatur ipsa aperiam eius aspernatur eum quaerat inventore beatae
+            quibusdam explicabo accusantium quos hic nam? Iure?
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    text.style.width = "146px"; 
+    text.style.height = "456px";
+    btn.addEventListener("click", () => {
+        text.style.height = "456px";
+        if (text.style.width === "546px") {
+            text.style.width = "146px";
+
+        }
+        else if (text.style.width === "146px") {
+            text.style.width = "546px";
+        }
+
+    })
+
+</script>
+
+</html>

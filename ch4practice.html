@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch4 Practice</title>
+    <!-- We will remove space between right and left div -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: black;
+            color: white;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 23px 34px;
+            font-size: 20px;
+        }
+
+        .right {
+            background-color: green;
+            display: inline-block;
+            width: 50%;
+            height: 90vh;
+            display: none;
+        }
+
+        .left {
+            
+            background-color: red;
+            display: inline-block;
+            width: 50%;
+            height: 90vh;
+            
+        }
+
+        footer {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(96, 35, 35);
+            color: wheat;
+            padding: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="right">Lorem, ipsum dolor.</div><div class="left">Lorem, ipsum dolor.</div>
+    <footer>
+        <p class="center">MR. ZAIN &copy;. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
